@@ -7,17 +7,26 @@ int mystrlen(char * s0){
   return len;
 }
 
-char * mystrcpy(char *dest, char *source){
-
+char * mystrcpy(char *s1, char *s2){
+  for(int c = 0; s2[c]; c++){
+    s1[c] = s2[c];
+  }
+  return s1;
 }
 
 char * mystrncat( char *dest, char *source, int n){
 
 }
+
 int mystrcmp( char *s1, char *s2 ){
 
 }
+
 char * mystrchr( char *s, char c ){
 
 
+}
+
+int main(){
+  return 0;
 }
