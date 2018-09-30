@@ -1,3 +1,3 @@
 # MKS65C-Str
-Michael Ye
+Michael Ye and
 Kevin Ly
