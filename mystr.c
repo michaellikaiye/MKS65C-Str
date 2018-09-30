@@ -49,8 +49,6 @@ int main(){
   char lemon2[] = "What two words do not rhyme";
   char demon2[] = "These words";
 
-
-
   printf("-----------------------------------------------------------------\n");
   printf("STRLEN TESTS \n \n");
   int testlen = strlen(lemon);
