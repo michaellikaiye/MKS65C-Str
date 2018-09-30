@@ -50,7 +50,7 @@ int main(){
   char demon2[] = "These words";
 
 
-/*
+
   printf("-----------------------------------------------------------------\n");
   printf("STRLEN TESTS \n \n");
   int testlen = strlen(lemon);
@@ -60,7 +60,7 @@ int main(){
 
   printf("strlen %d \n",testlen);
   printf("mystrlen %d \n",testlen2);
-  printf("mystrlen %d \n",testlen3);
+  printf("strlen %d \n",testlen3);
   printf("mystrlen %d \n",testlen4);
 
 
@@ -75,19 +75,30 @@ int main(){
   printf("strcpy %s \n",lemon);
   printf("mystrcpy %s \n",lemon2);
 
-*/
+
   printf("--------------------------------------------------------\n");
   printf("STRNCAT TESTS \n \n");
   char Banana[] = "Why did you pick these words";
-  char Disagree[] = "I got hungry";
+  char Disagree[] = "Why did you pick these words";
   char Apple[] = "The last two were clever";
-  char Fruit[] = "Sure but I am hungry";
+  char what[] = "The last two were clever";
+
+  char blue[] = "Why did you pick these words";
+  char red[] = "The last two were clever";
+  char blew[] = "Why did you pick these words";
+  char read[] = "The last two were clever";
+
 
   strncat(Banana,Apple,4);
-  mystrncat(Disagree,Fruit,4);
-
   printf("strncat %s \n",Banana);
+  mystrncat(Disagree,what,4);
   printf("mystrncat %s \n",Disagree);
+
+  strncat(red,blue,4);
+  printf("strncat %s \n",red);
+  mystrncat(read,blew,4);
+  printf("mystrncat %s \n",read);
+
 
 
   printf("--------------------------------------------------------\n");
@@ -130,15 +141,21 @@ int main(){
   printf("mystrcmp %d \n", mystrcmp(testcmp4,testcmp6));
   printf("strcmp %d \n", strcmp(testcmp5,testcmp6));
   printf("mystrcmp %d \n", mystrcmp(testcmp5,testcmp6));
-*/
+  */
 
   printf("--------------------------------------------------------\n");
   printf("STRCHR TESTS \n \n");
   char Mouse[] = "I hope this is not food";
-  char Mouse2[] = "Yeah please tell me this part of the computer";
+  char Keyboard[] = "Yeah please tell me this part of the computer";
 
   printf("strchr %s \n", strchr(Mouse, 'h'));
-  printf("mystrchr %s \n", mystrchr(Mouse2, 'p'));
+  printf("mystrchr %s \n", mystrchr(Mouse, 'h'));
+  printf("strchr %s \n", strchr(Keyboard, 'l'));
+  printf("mystrchr %s \n", mystrchr(Keyboard, 'l'));
+  printf("strchr %s \n", strchr("No people in my house", 'h'));
+  printf("mystrchr %s \n", mystrchr("No people in my house", 'h'));
+  printf("strchr %s \n", strchr(Keyboard, 'z'));
+  printf("mystrchr %s \n", mystrchr(Keyboard, 'z'));
 
   printf("-----------------------------------------------------------------\n");
 
