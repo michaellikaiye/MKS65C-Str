@@ -115,8 +115,8 @@ int main(){
   printf("strcmp %d \n", strcmp(testcmp,testcmp4));
   printf("mystrcmp %d \n", mystrcmp(testcmp,testcmp4));
   printf("strcmp %d \n", strcmp(testcmp,testcmp5));
-  /*
   printf("mystrcmp %d \n", mystrcmp(testcmp,testcmp5));
+  /*
   printf("strcmp %d \n", strcmp(testcmp,testcmp6));
   printf("mystrcmp %d \n", mystrcmp(testcmp,testcmp6));
   printf("strcmp %d \n", strcmp(testcmp2,testcmp3));
