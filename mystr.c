@@ -37,17 +37,18 @@ int mystrcmp( char *s1, char *s2 ){
 
 char * mystrchr( char *s, char c ){
   while(*s != '\0' && *s != c)
-  s++;
-
+    s++;
+  if(*s != c)
+    return NULL;
   return s;
 }
 
 
 int main(){
-  char lemon[] = "What two words do not rhyme";
-  char demon[] = "These words";
-  char lemon2[] = "What two words do not rhyme";
-  char demon2[] = "These words";
+  char lemon[100] = "What two words do not rhyme";
+  char demon[100] = "These words";
+  char lemon2[100] = "What two words do not rhyme";
+  char demon2[100] = "These words";
 
   printf("-----------------------------------------------------------------\n");
   printf("STRLEN TESTS \n \n");
@@ -76,15 +77,15 @@ int main(){
 
   printf("--------------------------------------------------------\n");
   printf("STRNCAT TESTS \n \n");
-  char Banana[] = "Why did you pick these words";
-  char Disagree[] = "Why did you pick these words";
-  char Apple[] = "The last two were clever";
-  char what[] = "The last two were clever";
+  char Banana[100] = "Why did you pick these words";
+  char Disagree[100] = "Why did you pick these words";
+  char Apple[100] = "The last two were clever";
+  char what[100] = "The last two were clever";
 
-  char blue[] = "Why did you pick these words";
-  char red[] = "The last two were clever";
-  char blew[] = "Why did you pick these words";
-  char read[] = "The last two were clever";
+  char blue[100] = "Why did you pick these words";
+  char red[100] = "The last two were clever";
+  char blew[100] = "Why did you pick these words";
+  char read[100] = "The last two were clever";
 
 
   strncat(Banana,Apple,4);
@@ -101,12 +102,12 @@ int main(){
 
   printf("--------------------------------------------------------\n");
   printf("STRCMP TESTS \n \n");
-  char testcmp[] = "ABCD";
-  char testcmp2[] = "Abcd";
-  char testcmp3[] = "abcd";
-  char testcmp4[] = "aBCD";
-  char testcmp5[] = "";
-  char testcmp6[] = " Abcd";
+  char testcmp[100] = "ABCD";
+  char testcmp2[100] = "Abcd";
+  char testcmp3[100] = "abcd";
+  char testcmp4[100] = "aBCD";
+  char testcmp5[100] = "";
+  char testcmp6[100] = " Abcd";
 
   printf("strcmp %d \n", strcmp(testcmp,testcmp2));
   printf("mystrcmp %d \n", mystrcmp(testcmp,testcmp2));
@@ -143,8 +144,8 @@ int main(){
 
   printf("--------------------------------------------------------\n");
   printf("STRCHR TESTS \n \n");
-  char Mouse[] = "I hope this is not food";
-  char Keyboard[] = "Yeah please tell me this part of the computer";
+  char Mouse[100] = "I hope this is not food";
+  char Keyboard[100] = "Yeah please tell me this part of the computer";
 
   printf("strchr %s \n", strchr(Mouse, 'h'));
   printf("mystrchr %s \n", mystrchr(Mouse, 'h'));
